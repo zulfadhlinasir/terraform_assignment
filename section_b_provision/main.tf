@@ -1,18 +1,3 @@
-
-terraform {
-  required_providers {
-    cloudflare = {
-      source  = "cloudflare/cloudflare"
-      version = "~> 4.0"
-    }
-  }
-}
-
-provider "cloudflare" {
-
-}
-
-
 resource "cloudflare_teams_rule" "rule12" {
   account_id     = "045206f590d4b40508e6aef1e2756db8"
   action         = "block"
